@@ -2,13 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/header/header';
+import { Main } from './components/portfolio/portfolio';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import About from './components/about/about';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Header/>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={
+        <div>
+          <Header/>
+        </div>
+      } />
+      <Route path='/projetos' element={<Main/>} />
+      <Route path='/about' element={<About/>}/>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

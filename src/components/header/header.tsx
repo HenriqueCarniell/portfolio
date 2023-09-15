@@ -6,7 +6,7 @@ import { RiMenu3Line } from "react-icons/ri";
 import Sidebar from './listSocial';
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleToggle = (): void => {
       setIsOpen(!isOpen);
@@ -21,9 +21,9 @@ function Header() {
 
         <div id="navbar" className="col-xxl-4 col-xl-5 col-lg-5 col-md-6 col-sm-1">
           <ul>
-            <a href=""><li>Home</li></a>
-            <a href=""><li>Portfolio</li></a>
-            <a href=""><li>About</li></a>
+            <a href="/"><li>Home</li></a>
+            <a href="/projetos"><li>Portfolio</li></a>
+            <a href="/about"><li>About</li></a>
           </ul>
         </div>
 
@@ -31,8 +31,8 @@ function Header() {
           <ul>
             <a href=""><li>Instagram</li></a>
             <a href=""><li>Twitter</li></a>
-            <a href=""><li>Linkedin</li></a>
-            <a href=""><li>GitHub</li></a>
+            <a href="https://www.linkedin.com/in/gustavo-henrique-b3a200263"><li>Linkedin</li></a>
+            <a href="https://github.com/HenriqueCarniell" target="_blank" ><li>GitHub</li></a>
           </ul>
         </div>
 
