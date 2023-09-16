@@ -34,6 +34,27 @@ text-align: center;
 #div-about-languages {
     width: 50%;
 }
+#ceub-logo-div img{
+    border-radius: 120px;
+    
+}
+#ceub h3, h5{
+    color: white;
+}
+#ceub {
+    padding-left: 2rem;
+    padding-top: 3rem;
+}
+#education {
+    display: flex;
+    margin-top: 2rem;
+}
+#education-frase {
+    margin-top: 10rem;
+}
+#list-languages {
+    flex-wrap: wrap;
+}
 #about1 h1 {
     color: white;
 }
@@ -47,6 +68,13 @@ text-align: center;
 }
 #about2 {
     width: 50%;
+}
+#qualidades{
+    display: block;
+}
+#qualidades li{
+    margin-bottom: 1rem;
+    font-size: 20px;
 }
 #title-home {
     padding-top: 4rem;
