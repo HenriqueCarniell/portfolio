@@ -1,6 +1,7 @@
 #container-home {
     background-color: black;
 }
+
 #container-about {
     width: 100%;
     background-color: black;
@@ -8,85 +9,173 @@
     margin-bottom: 25rem;
     padding-top: 5rem;
 }
+
 #div-image-ball {
     width: 50%;
     margin-left: 4rem;
 }
+
 #container2 {
     display: flex;
     width: 100%;
 }
+
 h1 {
     color: white;
 }
+
 p {
     color: white;
 }
+
 .language-skill {
     display: inline-block;
     margin-bottom: 20px;
     margin-right: 20px;
-text-align: center;
+    text-align: center;
 }
+
 .language-skill i {
     font-size: 30px;
 }
+
 #div-about-languages {
     width: 50%;
 }
-#ceub-logo-div img{
+
+#ceub-logo-div img {
     border-radius: 120px;
-    
+
 }
-#ceub h3, h5{
+
+#ceub h3,
+h5 {
     color: white;
 }
+
 #ceub {
     padding-left: 2rem;
     padding-top: 3rem;
 }
+
 #education {
     display: flex;
     margin-top: 2rem;
 }
+
 #education-frase {
     margin-top: 10rem;
 }
+
 #list-languages {
     flex-wrap: wrap;
 }
+
 #about1 h1 {
     color: white;
 }
+
 #emoji {
     height: 4rem;
     width: 4rem;
     margin: 4rem 0 0 1rem;
 }
+
 #about1 {
     width: 50%;
 }
+
 #about2 {
     width: 50%;
 }
-#qualidades{
+
+#qualidades {
     display: block;
 }
-#qualidades li{
+
+#qualidades li {
     margin-bottom: 1rem;
     font-size: 20px;
 }
+
 #title-home {
     padding-top: 4rem;
     padding-left: 10%;
     font-size: 50px;
 }
+
 #about-content {
     display: flex;
 }
+
 #paragraph {
     color: white;
     font-size: 25px;
     margin-top: 2rem;
     margin-left: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    #container-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #education img {
+        height: 80%;
+    }
+
+    #ceub {
+        padding: 0;
+    }
+
+    #about1 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #about2 {
+        width: 100%;
+    }
+
+    #div-image-ball {
+        display: none;
+    }
+
+    #container-about {
+        margin-bottom: 10rem;
+    }
+
+    #div-about-languages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #div-about-languages h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #list-languages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #about2 {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1230px) {
+    body {
+        font-family: initial !important;
+    }
 }

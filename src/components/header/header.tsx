@@ -4,13 +4,24 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { useState } from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import Sidebar from './listSocial';
+import { AiOutlineClose } from 'react-icons/ai';
+interface Styles {
+  width?: string;
+  backgroundColor?: string;
+}
 
-function Header() {
+const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleToggle = (): void => {
       setIsOpen(!isOpen);
   };
+
+  let divStyle: Styles = {};
+
+  if (isOpen) {
+    divStyle = { width: '10rem', backgroundColor: 'red' };
+  }
 
   return (
     <div>
@@ -36,11 +47,11 @@ function Header() {
           </ul>
         </div>
 
-        <div id="div-ham" className="col-sm-1" style={{ width: isOpen ? '10rem' : 'auto', backgroundColor: '#000000'}}>
-          <button id="button-ham" onClick={handleToggle}>
-          <RiMenu3Line color="white" />
-          </button>
-        </div>
+        <div id="div-ham" className="col-sm-1" style={divStyle}>
+    <button id="button-ham" onClick={handleToggle}>
+    {isOpen ? <AiOutlineClose color="white" /> : <RiMenu3Line color="white"/>}
+    </button>
+  </div>
       </header>
       <Sidebar isOpen={ isOpen }/>
     </div>

@@ -110,9 +110,9 @@ function Home() {
                     </div>
 
                     <div id="ceub">
-                        <h3>Centro universitario de Brasilia</h3>
-                        <h5>Analise e Desenvolvimento de Sistemas</h5>
-                        <h5>Janeiro 2023 - atualmente</h5>
+                        <h3>Pró-Linguas</h3>
+                        <h5>Ingles: Básico, Intermediario, avançado</h5>
+                        <h5>Dezembro 2022</h5>
                     </div>
                 </div>
             </div>
