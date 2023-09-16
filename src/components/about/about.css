@@ -1,7 +1,7 @@
 #aboutMe {
     display: flex;
     justify-content: center;
-    background-color: gray;
+    background-color: #F5F5F5;
     padding: 20px;
 }
 
@@ -19,4 +19,7 @@
 }
 #resumo {
     margin-bottom: 1.5rem;
+}
+#container-about {
+    background-color: #F5F5F5;
 }

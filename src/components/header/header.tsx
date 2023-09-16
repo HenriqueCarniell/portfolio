@@ -36,9 +36,9 @@ function Header() {
           </ul>
         </div>
 
-        <div id="div-ham" className="col-sm-1" style={{ width: isOpen ? '10rem' : 'auto', backgroundColor: isOpen ? '#262524' : '#403F3D;' }}>
+        <div id="div-ham" className="col-sm-1" style={{ width: isOpen ? '10rem' : 'auto', backgroundColor: '#000000'}}>
           <button id="button-ham" onClick={handleToggle}>
-            <RiMenu3Line />
+          <RiMenu3Line color="white" />
           </button>
         </div>
       </header>

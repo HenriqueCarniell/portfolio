@@ -1,0 +1,64 @@
+#container-home {
+    background-color: black;
+}
+#container-about {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    margin-bottom: 25rem;
+    padding-top: 5rem;
+}
+#div-image-ball {
+    width: 50%;
+    margin-left: 4rem;
+}
+#container2 {
+    display: flex;
+    width: 100%;
+}
+h1 {
+    color: white;
+}
+p {
+    color: white;
+}
+.language-skill {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+text-align: center;
+}
+.language-skill i {
+    font-size: 30px;
+}
+#div-about-languages {
+    width: 50%;
+}
+#about1 h1 {
+    color: white;
+}
+#emoji {
+    height: 4rem;
+    width: 4rem;
+    margin: 4rem 0 0 1rem;
+}
+#about1 {
+    width: 50%;
+}
+#about2 {
+    width: 50%;
+}
+#title-home {
+    padding-top: 4rem;
+    padding-left: 10%;
+    font-size: 50px;
+}
+#about-content {
+    display: flex;
+}
+#paragraph {
+    color: white;
+    font-size: 25px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
