@@ -65,7 +65,6 @@ li {
     align-items: center;
 }
 @media only screen and (max-width: 992px) {
-
         #navbar {
             display: none;
         }
@@ -79,6 +78,14 @@ li {
         #buttom-hamburguer {
             background-color: transparent;
             border: none;
+        }
+        #div-ham {
+            font-size: 30px;
+            padding: 0;
+            align-items: center;
+        }
+        #logo {
+            padding-left: 3%;
         }
   }
   @media only screen and (min-width: 992px) {

@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           </ul>
         </div>
 
-        <div id="div-ham" className="col-sm-1" style={divStyle}>
+        <div id="div-ham" className="col-sm-1 col-1" style={divStyle}>
     <button id="button-ham" onClick={handleToggle}>
     {isOpen ? <AiOutlineClose color="white" /> : <RiMenu3Line color="white"/>}
     </button>

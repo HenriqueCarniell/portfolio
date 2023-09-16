@@ -1,6 +1,7 @@
 import Header from "../header/header";
 import './about.css'
-function About() {
+
+let About:React.FC = () => {
     return (
         <div id="container-about">
             <Header />
