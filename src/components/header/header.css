@@ -7,40 +7,50 @@
     align-items: center;
     z-index: 1;
     position: relative;
-    padding-right: 0;
+    padding: 20px;
 }
+
 #div-ham {
     display: grid;
     height: 3rem;
     z-index: 998;
 }
+
 .list {
     color: black;
 }
+
 #logo-texto {
-    color:white;
+    color: white;
 }
+
 #social ul {
     justify-content: end;
 }
+
 #social li {
     margin-left: 2rem;
 }
+
 #navbar ul {
     justify-content: space-evenly;
 }
+
 ul {
     display: flex;
 }
+
 li {
     display: flex;
     text-decoration: none;
     color: white;
 
 }
+
 #container a {
     text-decoration: none;
 }
+
 .overlay {
     position: fixed;
     top: 0;
@@ -49,12 +59,13 @@ li {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-  }
-  
+}
+
 #button-i {
     border: none;
     background-color: transparent;
 }
+
 #button-ham {
     display: flex;
     justify-content: start;
@@ -64,6 +75,7 @@ li {
     height: 2rem;
     align-items: center;
 }
+
 body.show-sidebar::before {
     content: "";
     position: fixed;
@@ -74,37 +86,44 @@ body.show-sidebar::before {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     visibility: visible;
-  }
-  
+}
+
 @media only screen and (max-width: 992px) {
-        #navbar {
-            display: none;
-        }
-        #social {
-            display: none;
-        }
-        #button-icon {
-            justify-content: end;
-            display: flex;
-        }
-        #buttom-hamburguer {
-            background-color: transparent;
-            border: none;
-        }
-        #div-ham {
-            font-size: 30px;
-            padding: 0;
-            align-items: center;
-        }
-        #logo {
-            padding-left: 3%;
-        }
-  }
-  @media only screen and (min-width: 992px) {
+    #navbar {
+        display: none;
+    }
+
+    #social {
+        display: none;
+    }
+
+    #button-icon {
+        justify-content: end;
+        display: flex;
+    }
+
+    #buttom-hamburguer {
+        background-color: transparent;
+        border: none;
+    }
+
+    #div-ham {
+        font-size: 30px;
+        padding: 0;
+        align-items: center;
+    }
+
+    #logo {
+        padding-left: 3%;
+    }
+    #container {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
     #div-ham {
         display: none;
     }
-    
-  }
 
-  
+}
