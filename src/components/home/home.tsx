@@ -6,7 +6,8 @@ import { BiLogoJavascript, BiLogoTypescript, BiLogoReact, BiLogoNodejs } from 'r
 import { GrMysql } from 'react-icons/gr';
 
 
-function Home() {
+let Home:React.FC = () => {
+    
     return (
         <div id="container-home">
             <div id="container-about">

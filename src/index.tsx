@@ -4,7 +4,6 @@ import reportWebVitals from './reportWebVitals';
 import Header from './components/header/header';
 import { Main } from './components/portfolio/portfolio';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import About from './components/about/about';
 import Home from './components/home/home';
 
 
@@ -22,7 +21,6 @@ root.render(
         </div>
       } />
       <Route path='/projetos' element={<Main/>} />
-      <Route path='/about' element={<About/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
