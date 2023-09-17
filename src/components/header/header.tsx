@@ -9,25 +9,30 @@ import { AiOutlineClose } from 'react-icons/ai';
 interface Styles {
   width?: string;
   backgroundColor?: string;
+  position?: 'fixed'
+  right?: string;
+
 }
+
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleToggle = (): void => {
-      setIsOpen(!isOpen);
+    setIsOpen(!isOpen);
   };
 
   let divStyle: Styles = {};
 
   if (isOpen) {
-    divStyle = { width: '15rem', backgroundColor: '#192845' };
+    divStyle = { width: '15rem', backgroundColor: '#192845', position: 'fixed', right: '0' };
   }
+  
 
   useEffect(() => {
-    if(isOpen) {
+    if (isOpen) {
       document.body.classList.add('show-sidebar')
-    }else {
+    } else {
       document.body.classList.remove('show-sidebar')
     }
   }, [isOpen])
@@ -56,12 +61,12 @@ const Header: React.FC = () => {
         </div>
 
         <div id="div-ham" className="col-sm-1 col-1" style={divStyle}>
-    <button id="button-ham" onClick={handleToggle}>
-    {isOpen ? <AiOutlineClose color="white" /> : <RiMenu3Line color="white"/>}
-    </button>
-  </div>
+          <button id="button-ham" onClick={handleToggle}>
+            {isOpen ? <AiOutlineClose color="white" /> : <RiMenu3Line color="white" />}
+          </button>
+        </div>
       </header>
-      <Sidebar isOpen={ isOpen }/>
+      <Sidebar isOpen={isOpen} />
     </div>
   );
 }
