@@ -17,5 +17,16 @@
     background-color: black;
     width: 100%;
     height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  #title-portfolio-div {
+    padding-left:25%;
+  }
+  #portfolio {
+    display: relative;
+    z-index:2
+  }
+  
   

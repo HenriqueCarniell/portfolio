@@ -1,10 +1,11 @@
 import "./header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RiMenu3Line } from "react-icons/ri";
-import Sidebar from './listSocial';
+import Sidebar from './sidebar';
 import { AiOutlineClose } from 'react-icons/ai';
+
 interface Styles {
   width?: string;
   backgroundColor?: string;
@@ -20,8 +21,16 @@ const Header: React.FC = () => {
   let divStyle: Styles = {};
 
   if (isOpen) {
-    divStyle = { width: '10rem', backgroundColor: 'red' };
+    divStyle = { width: '15rem', backgroundColor: '#192845' };
   }
+
+  useEffect(() => {
+    if(isOpen) {
+      document.body.classList.add('show-sidebar')
+    }else {
+      document.body.classList.remove('show-sidebar')
+    }
+  }, [isOpen])
 
   return (
     <div>
