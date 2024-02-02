@@ -7,7 +7,7 @@
 
 .card {
   flex: 1 0 15rem; 
-  max-width: 15rem; 
+  max-width: 18rem; 
   height: 20rem;
   background-color: #f0f0f0;
   margin: 1.5rem .5rem;
@@ -64,7 +64,12 @@
     display: flex;
     justify-content: center;
   }
-  
+
+  .descricao {
+    height: 67%;
+    padding: 10px;
+  }
+
   .botao-projeto {
     width: 90%;
     display: flex;
@@ -72,7 +77,6 @@
     align-items: center;
     padding: 8px;
     background-color: black;
-    margin-top: 90%;
     border: none;
     border-radius: 8px;
   }

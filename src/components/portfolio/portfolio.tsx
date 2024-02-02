@@ -23,6 +23,12 @@ let Main: React.FC = () => {
                         <h1 className='titulo-projeto'>CRUD</h1>
                     </div>
 
+                    <div className='descricao'>
+                        <span>
+                            "Esse projeto chamado Invest é uma aplicação web que permite aos usuários gerenciar listas de projetos. Utiliza operações CRUD para criar, ler, atualizar e deletar registros de forma eficiente e intuitiva.”
+                        </span>
+                    </div>
+
                     <div className='div-botao-projeto'>
                         <button className='botao-projeto'>
                             <a href="https://github.com/HenriqueCarniell/invest" target='_blank' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
@@ -32,7 +38,25 @@ let Main: React.FC = () => {
                     </div>
                 </div>
                 <div className='card'>
+                    <div className='div-titulo-projeto'>
+                        <h1 className='titulo-projeto'>CineInfo</h1>
+                    </div>
 
+                    <div className='descricao'>
+                        <span className='span-descricao'>
+                            “CineInfo é uma ferramenta interativa que permite aos usuários buscar informações detalhadas sobre filmes. Utiliza uma API de filmes para apresentar dados como gênero, popularidade, descrição de forma intuitiva e visualmente atraente.”
+                        </span>
+
+                        <h6>Pesquise o nome em Inglês</h6>
+                    </div>
+
+                    <div className='div-botao-projeto'>
+                        <button className='botao-projeto'>
+                            <a href="https://github.com/HenriqueCarniell/searchmovie" target='_blank' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+                                <FaGithub color='white' />
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div className='card'>
 
