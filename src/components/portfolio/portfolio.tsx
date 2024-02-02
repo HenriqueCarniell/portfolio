@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../header/header';
 
+import { FaGithub } from "react-icons/fa";
+
 import './portfolio.css';
 
 let Main: React.FC = () => {
@@ -17,7 +19,17 @@ let Main: React.FC = () => {
             </div>
             <div id="cards">
                 <div className='card'>
+                    <div className='div-titulo-projeto'>
+                        <h1 className='titulo-projeto'>CRUD</h1>
+                    </div>
 
+                    <div className='div-botao-projeto'>
+                        <button className='botao-projeto'>
+                            <a href="https://github.com/HenriqueCarniell/invest" target='_blank' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+                                <FaGithub color='white' />
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div className='card'>
 

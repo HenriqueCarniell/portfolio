@@ -37,6 +37,9 @@
     #rocket-image-div {
       width: 50%;
     }
+    #rocket-image-div img{
+      width: 50%;
+    }
   }
   @media only screen and (max-width: 510px) {
     #rocket-image-div img{
@@ -48,5 +51,29 @@
 
   }
   
+  .div-titulo-projeto {
+    display: flex;
+    justify-content: center;
+  }
+
+  .titulo-projeto {
+    color: black;
+  }
+
+  .div-botao-projeto {
+    display: flex;
+    justify-content: center;
+  }
   
+  .botao-projeto {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: black;
+    margin-top: 90%;
+    border: none;
+    border-radius: 8px;
+  }
   
