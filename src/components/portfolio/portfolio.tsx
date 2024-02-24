@@ -37,6 +37,7 @@ let Main: React.FC = () => {
                         </button>
                     </div>
                 </div>
+
                 <div className='card'>
                     <div className='div-titulo-projeto'>
                         <h1 className='titulo-projeto'>CineInfo</h1>
@@ -58,11 +59,49 @@ let Main: React.FC = () => {
                         </button>
                     </div>
                 </div>
-                <div className='card'>
 
+                <div className='card'>
+                    <div className='div-titulo-projeto gerenciador'>
+                        <h1 className='titulo-projeto fonte-menor'>Gerenciador de Contatos</h1>
+                    </div>
+
+                    <div className='descricao'>
+                        <span className='span-descricao'>
+                            cada usuário tem seus dados criptografados e enviados ao banco de dados junto com os seus contatos salvos em tabelas com chaves estrangeiras, 
+                            garantindo uma organização eficaz. Basta fazer login no sistema e começar a gerenciar seus contatos de maneira simplificada!
+                        </span>
+                    </div>
+
+                    <div className='div-botao-projeto'>
+                        <button className='botao-projeto'>
+                            <a href="https://github.com/HenriqueCarniell/contatos" target='_blank' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+                                <FaGithub color='white' />
+                            </a>
+                        </button>
+                    </div>
                 </div>
-                <div className='card'>
 
+                <div className='card'>
+                    <div className='div-titulo-projeto'>
+                        <h1 className='titulo-projeto'>Checa Clima</h1>
+                    </div>
+
+                    <div className='descricao'>
+                        <span className='span-descricao'>
+                        Verifique o clima atual de qualquer lugar do mundo instantaneamente com o WeatherCheck. Uma aplicação simples e eficiente, feita em TypeScript, API,
+                        HTML e CSS, que fornece dados sobre as condições climáticas locais.
+                        </span>
+
+                        <h6>Pesquise o nome em Inglês</h6>
+                    </div>
+
+                    <div className='div-botao-projeto'>
+                        <button className='botao-projeto'>
+                            <a href="https://github.com/HenriqueCarniell/checktheweather" target='_blank' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+                                <FaGithub color='white' />
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div className='card'>
 

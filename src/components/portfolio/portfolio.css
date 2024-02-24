@@ -8,9 +8,17 @@
 .card {
   flex: 1 0 15rem; 
   max-width: 18rem; 
-  height: 20rem;
+  height: 23rem;
   background-color: #f0f0f0;
   margin: 1.5rem .5rem;
+}
+
+.fonte-menor {
+  font-size: 25px;
+}
+
+.gerenciador {
+  height: 56px;
 }
 
   #banner1 {
